@@ -65,7 +65,7 @@ src/
 ## 👨‍💻 Equipe  
 - **Rafel de Castro**: Gerente de projeto  
 - **Samuel Levi**: Dev
-- **Raí Vinicius**: Dev
+- **Raí Guilherme**: Dev
 - **Paulo Mateus**: Documentador  
 
 ---
