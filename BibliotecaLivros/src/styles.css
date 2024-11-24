@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+/*CSS GERAL QUE SE APLICA A TODAS AS PAGINAS, CUIDADO COM O QUE FOR COLOCAR AQUI!!!*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}

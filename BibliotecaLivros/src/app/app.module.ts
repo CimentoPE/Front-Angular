@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { AcervoLivrosComponent } from './paginas/acervo-livros/acervo-livros.component';
+import { InfoLivrosComponent } from './paginas/info-livros/info-livros.component';
+import { ListaLivrosComponent } from './paginas/lista-livros/lista-livros.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AcervoLivrosComponent,
+    InfoLivrosComponent,
+    ListaLivrosComponent
   ],
   imports: [
     BrowserModule,
