@@ -36,7 +36,7 @@ Um projeto em Angular que utiliza uma API de livros para listar, visualizar deta
    ```  
 3. Inicie o servidor de desenvolvimento:  
    ```bash
-   ng serve
+   ng serve -O
    ```  
 4. Acesse no navegador:  
    ```
@@ -48,9 +48,12 @@ Um projeto em Angular que utiliza uma API de livros para listar, visualizar deta
 src/
 ├── app/
 │   ├── components/
-│   │   ├── biblioteca/
-│   │   ├── detalhes/
-│   │   ├── livros-capturados/
+│   │   ├── header/
+│   │   ├── footer/
+│   ├── paginas/
+│   │   ├── acervo-livros/
+│   │   ├── info-livros/
+│   │   ├── lista-livros/
 │   ├── services/
 │   │   ├── livro.service.ts
 │   │   ├── usuario.service.ts
@@ -70,4 +73,7 @@ src/
 
 ---
 
-Posso ajustar o texto caso tenha mais informações ou queira detalhes específicos!
+Tutorial do angular/cli:
+- **Criar componentes/paginas:** ng g c nomedapasta/nomedocomponente
+- **Criar serviços:** ng g s nomedapasta/nomedpservico
+- **Rodar o site:** ng s -o
