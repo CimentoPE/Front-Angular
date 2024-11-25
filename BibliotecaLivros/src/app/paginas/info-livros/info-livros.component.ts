@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HttpService } from '../../services/http.service';
+import { Livro } from '../../../interface/Livro';
 
 @Component({
   selector: 'app-info-livros',
@@ -9,4 +11,16 @@ import { Component } from '@angular/core';
 })
 export class InfoLivrosComponent {
 
+  constructor(private service: HttpService){
+    this.getLivrosEmprestados()
+  }
+
+  livros: Livro[] = [];
+
+
+  getLivrosEmprestados(): void{
+    this.service.getLivrosEmprestados().subscribe((data) => {
+      this.livros = data;
+    });
+  }
 }
