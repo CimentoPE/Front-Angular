@@ -1,0 +1,26 @@
+/*CSS PROVISORIO*/
+.aboutus {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    background-color: aquamarine;
+}
+
+.aboutus div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(147, 203, 44);
+    padding: 5px;
+}
