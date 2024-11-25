@@ -8,6 +8,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { AcervoLivrosComponent } from './paginas/acervo-livros/acervo-livros.component';
 import { InfoLivrosComponent } from './paginas/info-livros/info-livros.component';
 import { ListaLivrosComponent } from './paginas/lista-livros/lista-livros.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,10 +21,11 @@ import { ListaLivrosComponent } from './paginas/lista-livros/lista-livros.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
-    provideClientHydration(withEventReplay())
+    provideClientHydration(withEventReplay()),
+    provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })
