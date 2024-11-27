@@ -9,6 +9,7 @@ import { AcervoLivrosComponent } from './paginas/acervo-livros/acervo-livros.com
 import { InfoLivrosComponent } from './paginas/info-livros/info-livros.component';
 import { ListaLivrosComponent } from './paginas/lista-livros/lista-livros.component';
 import { provideHttpClient } from '@angular/common/http';
+import { EmojicategoriaPipe } from './pipes/emojicategoria.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { provideHttpClient } from '@angular/common/http';
     FooterComponent,
     AcervoLivrosComponent,
     InfoLivrosComponent,
-    ListaLivrosComponent
+    ListaLivrosComponent,
+    EmojicategoriaPipe
   ],
   imports: [
     BrowserModule,

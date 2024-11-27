@@ -8,7 +8,7 @@
         <div class="card-body">
         <h3 class="card-title">{{ livro.titulo }}</h3>
         <p class="card-author">Autor: {{ livro.autor }}</p>
-        <p class="card-gen">Gênero: {{ livro.genero }}</p>
+        <p class="card-gen">Gênero: {{ livro.genero | emojicategoria}}</p>
         <p class="card-year">Ano: {{ livro.ano_publicacao }}</p>
       </div>  }
             </div>
