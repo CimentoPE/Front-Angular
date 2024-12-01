@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PipecontrolService } from '../../services/pipecontrol.service';
 
 @Component({
   selector: 'app-acervo-livros',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './acervo-livros.component.css'
 })
 export class AcervoLivrosComponent {
+  constructor(private pipeControlService: PipecontrolService) {}
 
+  togglePipe() {
+    if (this.pipeControlService.isPipeEnabled) {
+      this.pipeControlService.disablePipe();
+    } else {
+      this.pipeControlService.enablePipe();
+    }
+  }
 }
