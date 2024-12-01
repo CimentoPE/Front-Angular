@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  largura = 0
 
+  abrirMenu() {
+    if (this.largura < 1) {
+      this.largura = 270
+    }
+  }
 }

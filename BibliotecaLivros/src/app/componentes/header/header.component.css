@@ -1,7 +1,6 @@
-/*CSS TEMPORARIO!!!!*/
 .hotbar {
     display: flex;
-    background-color: aquamarine;
+    background-color: #4CAF50;
     position: relative;
     width: 100%;
     height: 80px;
@@ -11,37 +10,51 @@
     gap: 50px;
 }
 
-/*MENU DROPDOWN:*/
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+h1 {
+    color: white;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 120px;
-    z-index: 1;
-}
-
-.dropdown-content button {
-    display: block;
-    transition: background 0.5s;
-}
-
-.dropdown button {
+.open {
     border: none;
-    min-width: 120px;
+    min-width: 100px;
     padding: 12px 16px;
-    background-color: rgb(147, 203, 44);
+    background: none;
+    font-size: 22px;
+    transition: 0.3s;
+    color: rgb(141, 208, 40);
 }
 
-/*Efeitos do menu dropdown*/
-.dropdown:hover .dropdown-content {
+/*MENU SIDEBAR:*/
+.sidebar-menu {
+    height: 100%;
+    width: 270px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #7a7676;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar-menu button {
     display: block;
+    padding: 15px;
+    border: none;
+    transition: 0.3s;
+    color: rgb(141, 208, 40);
+    font-size: 18px;
+    min-width: 270px;
+    background: none;
 }
 
-.dropdown-content button:hover {
-    background-color: rgb(19, 108, 181);
+.sidebar-menu p {
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 35px;
+    display: block;
+    top: 0;
+    position: absolute;
+    right: 25px;
 }

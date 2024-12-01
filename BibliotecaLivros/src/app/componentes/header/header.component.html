@@ -1,13 +1,11 @@
 <section class="hotbar">
     <h1 class="title">Biblioteca Digital</h1>
-    <div class="dropdown">
-        <button>Rotas</button>
-        <div class="dropdown-content">
-            <!--Botões que transitam entre as paginas através do 'routerLink'. Sintaxe:
-                <nomedatag routerLink="/rotadapagina" > Qualquer Coisa </nomedatag> -->
-            <button routerLink="/acervo-livros">Acervo</button>
-            <button routerLink="/lista-livros">Lista</button>
-            <button routerLink="/info-livros">Informações do Livro</button>
-        </div>
+    <button class="open" destacar (click)="abrirMenu()">Menu</button>
+
+    <div class="sidebar-menu" fechar>
+        <p>&times;</p>
+        <button routerLink="/acervo-livros" destacar>Acervo</button>
+        <button routerLink="/lista-livros" destacar>Lista</button>
+        <button routerLink="/info-livros" destacar>Livros Mais Emprestados</button> 
     </div>
 </section>

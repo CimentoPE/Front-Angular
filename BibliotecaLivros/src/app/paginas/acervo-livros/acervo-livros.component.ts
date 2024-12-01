@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './acervo-livros.component.css'
 })
 export class AcervoLivrosComponent {
-
+  constructor () {
+    sessionStorage.clear()
+  }
 }
