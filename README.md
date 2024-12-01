@@ -16,20 +16,23 @@ Um projeto em Angular que utiliza uma API de livros para listar, visualizar deta
 - **Pipes**: Uso de pipes personalizados e estruturais.  
 - **Services**: Dois serviços para gerenciar dados e lógica.  
 - **Diretivas**:  
-  - Personalizadas:   
+  - Personalizadas: Destacar botões e reajjustar menu lateral.
   - Estruturais: `ngIf` e `ngFor`.
 
 ## 🚀 Como Executar  
 1. Clone o repositório:  
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
-   cd seu-projeto
+   git clone https://github.com/CimentoPE/Front-Angular
+   cd BibliotecaLivros
    ```  
 2. Instale as dependências:  
    ```bash
    npm install
    ```
 3. Inicie a API:
+   ```bash
+   java -jar biblioteca-0.0.1-SNAPSHOT.jar
+   ```
    
 4. Inicie o servidor de desenvolvimento:  
    ```bash
@@ -47,8 +50,3 @@ Um projeto em Angular que utiliza uma API de livros para listar, visualizar deta
 - **Paulo Mateus**: Documentador  
 
 ---
-
-Tutorial do angular/cli:
-- **Criar componentes/paginas:** ng g c nomedapasta/nomedocomponente
-- **Criar serviços:** ng g s nomedapasta/nomedpservico
-- **Rodar o site:** ng s -o

@@ -1,11 +1,12 @@
 <section class="hotbar">
     <h1 class="title">Biblioteca Digital</h1>
-    <button class="open" destacar (click)="abrirMenu()">Menu</button>
+    <button class="open" destacar ajustar="menu-lateral">Menu</button> <!--Botão que mostra/esconde o menu-->
 
-    <div class="sidebar-menu" fechar>
-        <p>&times;</p>
+    <div class="sidebar-menu" id="menu-lateral"> <!--Menu lateral e seu conteudo-->
+        <p ajustar="menu-lateral" destacar>&times;</p> <!--Botão que fecha o menu lateral-->
         <button routerLink="/acervo-livros" destacar>Acervo</button>
         <button routerLink="/lista-livros" destacar>Lista</button>
-        <button routerLink="/info-livros" destacar>Livros Mais Emprestados</button> 
+        <button routerLink="/info-livros" destacar>Livros Mais Emprestados</button>
+        <button destacar (click)="togglePipe()">Desativar/Ativar Emojis</button>
     </div>
 </section>
