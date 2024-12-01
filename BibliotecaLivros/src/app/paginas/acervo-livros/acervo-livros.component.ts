@@ -9,7 +9,7 @@ import { PipecontrolService } from '../../services/pipecontrol.service';
   styleUrl: './acervo-livros.component.css'
 })
 export class AcervoLivrosComponent {
-  constructor(private pipeControlService: PipecontrolService) {}
+  constructor(private pipeControlService: PipecontrolService) {sessionStorage.clear()}
 
   togglePipe() {
     if (this.pipeControlService.isPipeEnabled) {

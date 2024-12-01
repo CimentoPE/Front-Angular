@@ -10,6 +10,8 @@ import { InfoLivrosComponent } from './paginas/info-livros/info-livros.component
 import { ListaLivrosComponent } from './paginas/lista-livros/lista-livros.component';
 import { provideHttpClient } from '@angular/common/http';
 import { EmojicategoriaPipe } from './pipes/emojicategoria.pipe';
+import { DestaqueDirective } from './diretivas/destaque.directive';
+import { AbrirDirective } from './diretivas/abrir.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { EmojicategoriaPipe } from './pipes/emojicategoria.pipe';
     AcervoLivrosComponent,
     InfoLivrosComponent,
     ListaLivrosComponent,
-    EmojicategoriaPipe
+    EmojicategoriaPipe,
+    DestaqueDirective,
+    AbrirDirective
   ],
   imports: [
     BrowserModule,

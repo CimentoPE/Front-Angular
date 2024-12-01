@@ -4,8 +4,12 @@
     justify-content: center;
     height: 100px;
     width: 100%;
-    bottom: 0;
-    background-color: aquamarine;
+    top: 100%;
+    background-color: #4CAF50;
+}
+
+.aboutus p {
+    color: white;
 }
 
 .aboutus div {
@@ -19,7 +23,8 @@
 
 .aboutus a {
     text-decoration: none;
-    color: black;
-    background-color: rgb(147, 203, 44);
+    color: rgb(141, 208, 40);
+    background: none;
+    transition: 0.3s;
     padding: 5px;
 }

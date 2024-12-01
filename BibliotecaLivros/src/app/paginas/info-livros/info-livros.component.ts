@@ -15,6 +15,20 @@ export class InfoLivrosComponent {
     this.getLivrosEmprestados()
   }
 
+    //Sessão com a função de reiniciar a pagina:
+    ngOnInit() {
+      this.load();
+    }
+  
+    load() {
+      const HAS_LOADE = 'has_loae'
+      const has_loade = sessionStorage.getItem(HAS_LOADE)
+      if (!has_loade) {
+        sessionStorage.setItem(HAS_LOADE,'true')
+        location.reload()
+      }
+    }
+
   livros: Livro[] = [];
 
 
