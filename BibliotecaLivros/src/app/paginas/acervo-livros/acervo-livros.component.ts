@@ -10,7 +10,7 @@ import { PipecontrolService } from '../../services/pipecontrol.service';
 })
 export class AcervoLivrosComponent {
   constructor(private pipeControlService: PipecontrolService) {sessionStorage.clear()}
-
+ 
   togglePipe() {
     if (this.pipeControlService.isPipeEnabled) {
       this.pipeControlService.disablePipe();
