@@ -26,5 +26,6 @@
     color: rgb(141, 208, 40);
     background: none;
     transition: 0.3s;
+    font-size: 22px;
     padding: 5px;
 }

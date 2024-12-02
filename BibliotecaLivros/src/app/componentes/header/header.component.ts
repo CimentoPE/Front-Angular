@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PipecontrolService } from '../../services/pipecontrol.service';
 
 @Component({
   selector: 'app-header',
@@ -8,11 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  largura = 0
+  constructor(private pipeControlService: PipecontrolService) {}
 
-  abrirMenu() {
-    if (this.largura < 1) {
-      this.largura = 270
+  togglePipe() {
+    if (this.pipeControlService.isPipeEnabled) {
+      this.pipeControlService.disablePipe();
+    } else {
+      this.pipeControlService.enablePipe();
     }
   }
 }
